@@ -10,7 +10,7 @@ def get_formatted_address(add):
 
     try:
         r = requests.get(
-             "https://maps.googleapis.com/maps/api/geocode/json?address="+add+"&key=AIzaSyDQQ3v45Vf1LVh2JZFwh4yHaM4ERoPf1M0")
+             "https://maps.googleapis.com/maps/api/geocode/json?address="+add+"&key=yourkey")
         data = r.json()
         results= data['results']
         address=results[0]
